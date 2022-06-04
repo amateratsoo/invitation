@@ -18,7 +18,7 @@ export default function Invite() {
   // whatsapp information
 
   const number = 995382809;
-  const message = `Eu ${name} confimo a minha presença no dia 19 de Junho as 13h00, na Centralidade do Kilamba, U10, aptm. 24 🤝`;
+  const message = `Eu, ${name}, confimo a minha presença no dia 19 de Junho as 13h00, na Centralidade do Kilamba, U10, aptm. 24 🤝`;
 
   return (
 
