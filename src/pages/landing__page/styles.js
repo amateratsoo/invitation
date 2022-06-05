@@ -11,7 +11,7 @@ export const Container = styled.main `
 
   // responsiveness for medium devices (laptops)
 
-  @media (max-width: 1262px) {
+  @media (max-width: 1300px) {
 
     gap: 6%;
 
@@ -34,7 +34,7 @@ export const Container = styled.main `
 
   // responsiveness to medium-small devices (tablets)
 
-  @media (min-width: 425px) and (max-width: 880px) {
+  @media (min-width: 425px) and (max-width: 920px) {
 
     position: relative;
     justify-content: center;
@@ -67,7 +67,7 @@ export const InfoDiv = styled.div`
 
   // responsiveness to medium-small devices (tablets)
 
-  @media (min-width: 425px) and (max-width: 880px) {
+  @media (min-width: 425px) and (max-width: 920px) {
 
     gap: 40%;
 
@@ -115,7 +115,7 @@ export const Greetings = styled.img`
 
   // responsiveness to medium-small devices (tablets)
 
-  @media (min-width: 425px) and (max-width: 880px) {
+  @media (min-width: 425px) and (max-width: 920px) {
 
     position: absolute;
     left: 0;
@@ -130,6 +130,22 @@ export const Title = styled.h1`
   color: #6358B6;
   font-size: 3rem;
   text-align: center; 
+
+  // resposiveness for big tablets
+
+  @media (min-width: 870px) and (max-width: 1048px) and (orientation: portrait) {
+
+    font-size: 4rem;
+
+  } 
+
+  // resposiveness for medium tablets
+
+  @media (width: 540px) and (orientation: portrait) {
+
+    font-size: 2.6rem;
+
+  }
 
   // responsiveness for small devices (phones)
 
@@ -166,6 +182,26 @@ export const Button = styled.button`
   padding-right: 1rem;
   gap: 2.2rem;
 
+  // responsiveness for big tablets
+
+  @media (min-width: 870px) and (max-width: 1040px) and (orientation: portrait) {
+
+    width: 18rem;
+    height: 5.4rem;
+    font-size: 1.5rem;
+    padding-right: 1.3rem;
+
+  }
+
+  // resposiveness for medium tablets
+
+  @media (min-width: 540px) and (max-height: 730px) and (orientation: portrait) {
+
+    width: 12rem;
+    gap: 2rem;
+
+  }
+
   // responsiveness for small devices (phones) 
 
   @media (max-width: 424px) {
@@ -173,7 +209,7 @@ export const Button = styled.button`
     width: 14rem;
     height: 4rem;
     font-size: 1rem;
-    gap: 38px;
+    gap: 1.8rem;
     padding-right: 20px;
     justify-content: flex-end;
 
@@ -188,4 +224,16 @@ export const Button = styled.button`
     font-size: 1.2rem;
 
   }
-`
+`;
+
+export const Arrow = styled.img`
+  width: 1.5rem;
+  height: 1.5rem;
+
+  @media (min-width: 880px) and (max-width: 1040px) {
+
+    width: 2rem;
+    height: 2rem;
+
+  }
+`;

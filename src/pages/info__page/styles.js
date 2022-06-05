@@ -26,6 +26,7 @@ export const Container = styled.div`
 
     flex-direction: column;
     overflow-y: scroll;
+    height: 140vh;
 
   }
 
@@ -39,8 +40,16 @@ export const Container = styled.div`
 
   @media (min-width: 700px) and (max-width: 799px) {
 
-    height: 175vh;
+    height: 174vh;
     
+  }
+
+  // responsiveness for chunky medium tablets
+
+  @media (min-width: 540px) and (max-width: 699px) and (max-height: 720px) and (orientation: portrait) {
+
+    height: 230vh;
+
   }
 
   // responsiveness for top tier phones
@@ -80,7 +89,7 @@ export const Container = styled.div`
 
   @media (width: 375px) and (height: 812px) {
 
-    height: 255vh;
+    height: 250vh;
 
   }
 
@@ -145,6 +154,7 @@ export const Info = styled.div`
 
     width: 100%;
     overflow: hidden;
+    height: 90vh;
 
   }
 
@@ -168,6 +178,14 @@ export const Info = styled.div`
 
   }
 
+  // resposiveness for medium tablets
+
+  @media (min-width: 540px) and (max-height: 730px) and (orientation: portrait) {
+
+    height: 170vh;
+
+  }
+
   // responsiveness for top tier phones
 
   @media (max-width: 430px) {
@@ -180,7 +198,7 @@ export const Info = styled.div`
 
   @media (width: 414px) and (height: 736px) {
 
-    height: 120vh;
+    height: 205vh;
 
   }
 
@@ -268,11 +286,26 @@ export const InfoText = styled.div`
 
   }
 
+  @media (max-width: 920px) and (orientation: portrait) {
+
+    margin-top: -4rem;
+    margin-bottom: -4rem;
+
+  }
+
   // responsiveness for tablets
 
   @media (min-width: 700px) and (max-width: 830px) {
 
-    margin-top: -12rem;
+    margin-top: -26rem;
+
+  }
+
+  // resposiveness for medium tablets
+
+  @media (min-width: 540px) and (max-height: 730px) and (orientation: portrait) {
+
+    margin-top: -20rem;
 
   }
 
@@ -280,7 +313,7 @@ export const InfoText = styled.div`
 
   @media (max-width: 430px) {
 
-    margin-top: -13.5rem;
+    margin-top: -23.5rem;
     text-align: left;
 
   }
@@ -289,7 +322,7 @@ export const InfoText = styled.div`
 
   @media (max-width: 400px) {
 
-    margin-top: -13rem;
+    margin-top: -23rem;
     text-align: left;
 
   }
@@ -299,7 +332,7 @@ export const InfoText = styled.div`
 
   @media (max-width: 380px) {
 
-   margin-top: -10.5rem;
+   margin-top: -20.5rem;
    text-align: left;
     
   }
@@ -308,13 +341,13 @@ export const InfoText = styled.div`
 
   @media (width: 375px) and (height: 812px) {
 
-    margin-top: -14rem;
+    margin-top: -24rem;
 
   }
 
   @media (max-width: 360px) {
 
-    margin-top: -12rem;
+    margin-top: -22rem;
 
   }
 
@@ -341,25 +374,35 @@ export const TitleContainer = styled.div`
 
   // set the query for big tablets
 
-  @media (min-width: 1000px) and (orientation: portrait) {
+  @media (min-width: 912px) and (orientation: portrait) {
 
     width: 100%;
     height: 50vh;
+    font-size: 1.5rem;
 
   }
 
   // set flex direction to column when the user's 
   // on a mobile device
 
-  @media (max-width: 920px) and (orientation: portrait) {
+  @media (max-width: 910px) and (orientation: portrait) {
 
-    width: 100%
+    width: 100%;
+    height: 50vh;
 
   }
 
   // responsiveness for tablets
 
   @media (min-width: 700px) and (max-width: 830px) {
+
+    height: 60vh;
+
+  }
+
+  // resposiveness for medium tablets
+
+  @media (min-width: 540px) and (max-height: 730px) and (orientation: portrait) {
 
     height: 60vh;
 

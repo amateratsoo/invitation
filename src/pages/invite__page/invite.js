@@ -11,14 +11,20 @@ import arrow from '../../assets/icons/arrow.png';
 export default function Invite() {
 
   const [ picture, setPicture ] = useState('');
-  useEffect(() => setPicture(localStorage.getItem('picture')), []);
+  useEffect(() => {
+    
+    setTimeout(() => alert('Não se esqueça de fazer uma captura de seu convite'), 700);
+    setPicture(localStorage.getItem('picture'))
+  
+  }, []);
 
   const { name } = useParams();
+
 
   // whatsapp information
 
   const number = 995382809;
-  const message = `Eu, ${name}, confimo a minha presença no dia 19 de Junho as 13h00, na Centralidade do Kilamba, U10, aptm. 24 🤝`;
+  const message = `Eu, ${name}, confirmo a minha presença no dia 19 de Junho as 13h00, na Centralidade do Kilamba, U10, aptm. 24 🤝`;
 
   return (
 

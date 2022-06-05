@@ -17,6 +17,7 @@ export default function LandingPage() {
   return (
 
     <Container>
+      
       <Greetings src={greetingsImg} alt='imagem de boas-vindas' />
 
       <InfoDiv>
@@ -26,6 +27,7 @@ export default function LandingPage() {
         <Button onClick={() => navigate('/info')}>SAIBA MAIS <img src={arrow} alt ='arrow' width='20px' height='20px' /></Button>
 
       </InfoDiv>
+
     </Container>
 
   );
